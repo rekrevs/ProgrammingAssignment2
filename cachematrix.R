@@ -33,7 +33,7 @@ cacheSolve <- function(x, ...) {
     if(!is.null(m)) {
         return(m)
     }
-    data <- x$getcache()
+    data <- x$get()
     m <- solve(data, ...)
     x$setcache(m)
     m
